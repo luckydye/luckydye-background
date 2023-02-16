@@ -16,7 +16,7 @@ export default function Model() {
   const group = useRef<any>();
   const light = useRef<any>();
 
-  const { scene, animations, cameras } = useGLTF("/spirited_away_train.glb");
+  const { scene, animations, cameras } = useGLTF("./spirited_away_train.glb");
   const { actions } = useAnimations(animations, group);
 
   const three = useThree((state) => state);
